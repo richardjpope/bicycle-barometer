@@ -21,23 +21,30 @@ If you like you can skip this part and use the instance of the web app deployed 
 
 ### Setting up a local development copy
 1. Install and setup virtualenv:
-	$ easy_install virtualenv
-	$ virtualenv .
+
+        $ easy_install virtualenv
+        $ virtualenv .
 2. Install requirements:
-	$ pip install -r requirements.txt
+
+        $ pip install -r requirements.txt
 3. Add the met office api key:
-	$ export METOFFICE_DATAPOINT_KEY=ExAmPlEkEy
+
+        $ export METOFFICE_DATAPOINT_KEY=ExAmPlEkEy
 4. Run the app:
-	$ python run web/app.py
+
+        $ python run web/app.py
 
 ### Deploying to heroku
 1. Create an account on [heroku.com](http://heroku.com) and install the toolbelt https://toolbelt.heroku.com/
 2. Create a new heroku instance
-	 $ heroku create
+
+        $ heroku create
 3. Deploy:
-	$ git push heroku master
+
+        $ git push heroku master
 4. Add the met office api key
-	$ heroku config:add METOFFICE_DATAPOINT_KEY=ExAmPlEkEy
+
+        $ heroku config:add METOFFICE_DATAPOINT_KEY=ExAmPlEkEy
 
 ## Programming the nanode
 1. Install the [Arduino IDE app](http://arduino.cc/en/main/software)
