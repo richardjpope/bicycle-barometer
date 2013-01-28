@@ -32,6 +32,7 @@ If you like you can skip this part and use the instance of the web app deployed 
 
         $ easy_install virtualenv
         $ virtualenv .
+        $ source bin/activate        
 2. Install requirements:
 
         $ pip install -r requirements.txt
@@ -40,7 +41,7 @@ If you like you can skip this part and use the instance of the web app deployed 
         $ export METOFFICE_DATAPOINT_KEY=ExAmPlEkEy
 4. Run the app:
 
-        $ python run web/app.py
+        $ python web/app.py
 
 ### Deploying to heroku
 1. Create an account on [heroku.com](http://heroku.com) and install the toolbelt https://toolbelt.heroku.com/
