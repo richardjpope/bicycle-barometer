@@ -4,6 +4,8 @@ The bicycle barometer takes data about the weather, the status of tube lines and
 
 Note: this code is very scrappy, but I'm releaseing it early as there has been lots of interest. There is a long todo list on the github issue tracker for this repo, feel free to fork and get involved.
 
+[The instructions here are for a Nanode, hopefully someone will get it working for an Arduino + ethernet sheild and submit a pull request]
+
 The bicycle barometer consists of two parts:
 
 1. A web app that does the hard work of looking up the weather and tube status, and reduces them down to a single number
