@@ -2,7 +2,7 @@
 
 The bicycle barometer takes data about the weather, the status of tube lines and stations and displays a value on a dial. [More info and a video here](http://blog.oftcc.net/post/39219681688/the-bicycle-barometer-takes-data-about-the).
 
-Note: this code is very scrappy, but I'm releaseing it early as there has been lots of interest. There is a long todo list on the github issue tracker for this repo, feel free to fork and get involved.
+Note: this code is a very scrappy minimum viable product, but I'm releaseing it early as there has been lots of interest. There is a long todo list on the github issue tracker for this repo, feel free to fork and get involved.
 
 [The instructions here are for a Nanode, hopefully someone will get it working for an Arduino + ethernet sheild and submit a pull request]
 
