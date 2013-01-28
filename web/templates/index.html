@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <script type="text/javascript">
+        
+        google.load('visualization', '1', {packages:['gauge']});
+           google.setOnLoadCallback(drawChart);
+           function drawChart() {
+             var data = google.visualization.arrayToDataTable([
+               ['Label', 'Value'],
+               ['', {{value}}],
+             ]);
+
+             var options = {
+               width: 900, height: 900,
+               minorTicks: 3
+             };
+
+             var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
+             chart.draw(data, options);
+           }
+
+    </script>
+{% endblock %}
+{% block content %}
+<h1 style="text-align:center;">The Bicycle Barometer says ...</h1>
+    <input type="hidden" id="display_value" value="{{value}}"/>
+    <div id="chart_div"></div>
+{% endblock %}

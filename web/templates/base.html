@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='javascript/main.js') }}"></script>
+        <title>{% block title %}{% endblock %} | Bycycle barometer</title>
+    {% endblock %}
+</head>
+<body>
+<div id="content">
+    {% block content %}{% endblock %}
+</div>
+<div id="footer">
+    {% block footer %}{% endblock %}
+</div>
+</body>
