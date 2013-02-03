@@ -40,7 +40,7 @@ static void my_callback (byte status, word off, word len) {
   Serial.println(value);
   
   myservo.attach(9);
-  myservo.write(180 - (180 / 100) * value);
+  myservo.write(180 - (180.0 / 100.0) * value);
   delay(4000); // allow time to move before detaiching
   myservo.detach();
 }
