@@ -10,7 +10,7 @@ static byte mymac[] = { 0x00,0x00,0x00,0x00,0x00,0x00 };
 byte Ethernet::buffer[700];
 static uint32_t timer;
 
-char website[] PROGMEM = "salty-journey-5325.herokuapp.com";
+char website[] PROGMEM = "bicyclebarometer.oftcc.net";
 
 int stringToInt(String value) {
   char valueArray[value.length() + 1];
